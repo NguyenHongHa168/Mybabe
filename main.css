@@ -1,0 +1,51 @@
+
+body {
+    /* background: #000; */
+    line-height: 2;
+}
+
+.c {
+    color: #fff;
+    opacity: 0
+
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  /*animation-name: fadeIn;*/
+  animation: fadeIn 1s both;
+}
+
+.content {
+    font-size: 90px;
+    padding: 200px 0;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+
+}
+.music{
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+}
+.image{
+  position: absolute;
+  top: 10px;
+  left: 100px;
+  z-index: 99999;
+  /* background-image: url("https://upload.wikimedia.org/wikipedia/commons/4/4d/Cat_November_2010-1a.jpg"); */
+  mask-border: radial-gradient(#000 69%,#0000 70%) 84.5%/50%;
+  clip-path: polygon(-41% 0,50% 91%, 141% 0);
+  width:500px;
+}
